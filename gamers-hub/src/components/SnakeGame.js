@@ -12,24 +12,24 @@ const DIRECTIONS = {
   right: { x: 1, y: 0 },
 };
 
+function generateFood(snake) {
+  while (true) {
+    const newFood = {
+      x: Math.floor(Math.random() * (CANVAS_SIZE / SCALE)),
+      y: Math.floor(Math.random() * (CANVAS_SIZE / SCALE)),
+    };
+    if (!snake.some((segment) => segment.x === newFood.x && segment.y === newFood.y)) {
+      return newFood;
+    }
+  }
+}
+
 function SnakeGame() {
   const canvasRef = useRef(null);
   const [snake, setSnake] = useState(INITIAL_SNAKE);
-  const [food, setFood] = useState(generateFood());
-  const [direction, setDirection] = useState(DIRECTIONS.right);
+  const [food, setFood] = useState(() => generateFood(INITIAL_SNAKE));
   const [nextDirection, setNextDirection] = useState(DIRECTIONS.right);
   const [gameOver, setGameOver] = useState(false);
-
-  function generateFood() {
-    let newFood;
-    do {
-      newFood = {
-        x: Math.floor(Math.random() * (CANVAS_SIZE / SCALE)),
-        y: Math.floor(Math.random() * (CANVAS_SIZE / SCALE)),
-      };
-    } while (snake.some((segment) => segment.x === newFood.x && segment.y === newFood.y));
-    return newFood;
-  }
 
   const changeDirection = (newDir) => {
     setNextDirection((prev) => {
@@ -44,7 +44,6 @@ function SnakeGame() {
     if (gameOver) return;
 
     const interval = setInterval(() => {
-      setDirection(nextDirection);
       setSnake((prevSnake) => {
         const newSnake = [...prevSnake];
         const head = {
@@ -66,7 +65,7 @@ function SnakeGame() {
         newSnake.unshift(head);
 
         if (head.x === food.x && head.y === food.y) {
-          setFood(generateFood());
+          setFood(generateFood(newSnake));
         } else {
           newSnake.pop();
         }
