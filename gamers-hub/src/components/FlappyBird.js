@@ -3,7 +3,7 @@ import './FlappyBird.css';
 
 const FlappyBird = () => {
   const [birdPosition, setBirdPosition] = useState(250);
-  const [gravity, setGravity] = useState(2);
+  const gravity = 2;
   const [isGameOver, setIsGameOver] = useState(false);
   const [pipeHeight, setPipeHeight] = useState(200);
   const [pipeLeft, setPipeLeft] = useState(500);
