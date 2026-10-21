@@ -1,4 +1,4 @@
-🎮 Sarath Game Hub
+🎮 MiniGame Mania
 A live demo is available at: [eclectic-lollipop.netlify.app
 ](https://eclectic-lollipop-f97039.netlify.app/)
 
