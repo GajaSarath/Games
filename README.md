@@ -1,6 +1,6 @@
 🎮 MiniGame Mania
-A live demo is available at: [eclectic-lollipop.netlify.app
-](https://sparkling-faloodeh-aff3e3.netlify.app)
+A live demo is available at: [sparkling-faloodeh-aff3e3.netlify.app]
+(https://sparkling-faloodeh-aff3e3.netlify.app)
 
 
 ✨ Overview
