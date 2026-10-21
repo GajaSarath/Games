@@ -1,10 +1,10 @@
-🎮 Bhuvanesh Game Hub
+🎮 Sarath Game Hub
 A live demo is available at: [eclectic-lollipop.netlify.app
 ](https://eclectic-lollipop-f97039.netlify.app/)
 
 
 ✨ Overview
-Bhuvanesh Game Hub is a collection of fun and interactive mini-games developed for learning and showcasing front-end development skills. The hub integrates multiple games with a visually appealing UI, providing a one-stop platform for quick entertainment and coding practice.
+Sarath Game Hub is a collection of fun and interactive mini-games developed for learning and showcasing front-end development skills. The hub integrates multiple games with a visually appealing UI, providing a one-stop platform for quick entertainment and coding practice.
 
 🚀 Features
 🎲 Tic-Tac-Toe
@@ -28,4 +28,4 @@ Netlify for deployment
 
 
 ✨ Credits
-Developed with ❤️ by Bhuvanesh Pranay.
+Developed with ❤️ by GajaSarath.
