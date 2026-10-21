@@ -24,7 +24,7 @@ function GameSelection() {
 
   return (
     <div className="game-hub">
-      <h1 className="game-title">✨ Bhuvanesh Game Hub 🎮</h1>
+      <h1 className="game-title">✨ MiniGame Mania 🎮</h1>
       <div className="game-grid">
         {games.map((game, index) => (
           <Link key={index} to={game.to} className={`game-card ${game.className}`}>
